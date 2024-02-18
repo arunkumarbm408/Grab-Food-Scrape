@@ -1,0 +1,46 @@
+{
+    "manifest_version": 3,
+    "name": "GrabFood Scraper",
+    "version": "1.0",
+    "description": "A Chrome extension to scrape data from GrabFood website.",
+    "permissions": [
+      "activeTab",
+      "https://food.grab.com/"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        
+      }
+    },
+    "icons": {
+      
+    },
+    "host_permissions": [
+      "https://food.grab.com/"
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "library/xhr.js"
+        
+        ],
+        "matches": [
+          "http://*/*",
+          "https://*/*"
+        ]
+      }
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js",
+        "library/xhr.js"]
+      }
+      
+    ]
+  }
+  

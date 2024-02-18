@@ -1,0 +1,1 @@
+The objective of this assignment is to develop a web scraper to extract specific information from an app/website. This assignment will test your ability to understand the app/web scraping concepts, make use of scraping libraries, and counter challenges such as blocking, authentication, etc., in the data extraction process.
